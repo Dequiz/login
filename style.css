@@ -33,6 +33,7 @@ body{
     top: 50px;
     margin-bottom: 10px;
     border: solid 1px black;
+    color: black;
 }
 .senha{
     background-color: white;
@@ -45,6 +46,7 @@ body{
     position: relative;
     top: 50px;
     border: solid 1px black;
+    color: black;
 }
 .botao{
     background-color: rgb(0, 0, 0);
