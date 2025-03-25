@@ -1,19 +1,32 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+    <title>Document</title>
 </head>
+
 <body>
-<div class="container">
-    <h1 class="title">Login</h1>
-    <p class="caixa"></p>
-    <input type="email" placeholder="E-mail" class="email">
-    <input type="password" placeholder="Senha" class="senha">
-    <input type="submit" value="Entrar" class="botao">
-    <p class="forget">Esqueci a senha</p>
-</div>
+    <div class="container">
+        <form action="" id="inputLogin">
+            <img src="user.png" alt="" id="profileImage">
+            <label for="inputText" class="labels">Nome </label>
+            <input type="text" placeholder="Seu nome aqui" id="inputText" class="inputs">
+            <label for="inputPassword" class="labels">Senha</label>
+            <input type="password" name="" id="inputPassword" class="inputs" placeholder="Insira sua senha">
+            <div class="minorParts">
+                <div class="rememberContainer">
+                    <input type="checkbox" name="" id="inputCheck">
+                    <label for="inputCheck" id="remember">Lembrar de mim</label>
+                </div>
+                <p class="forgetPassword">Esqueci a senha</p>
+            </div>
+            <button id="inputButton" class="inputs">Entrar</button>
+
+        </form>
+    </div>
 </body>
+
 </html>
