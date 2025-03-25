@@ -1,78 +1,99 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 *{
     margin: 0;
     padding: 0;
+    font-family: "Poppins";
 }
 body{
-    background-color: rgb(62, 33, 228);
-    font-family: Arial, Helvetica, sans-serif;
+    background-image: radial-gradient(at 21.78416955258513% 53.986211221150086%, hsla(229.52380952380952, 96.92307692307693%, 74.50980392156863%, 1) 0%, hsla(229.52380952380952, 96.92307692307693%, 74.50980392156863%, 0) 100%), radial-gradient(at 92.31816784000809% 75.6281491773517%, hsla(327.72727272727275, 100%, 74.11764705882354%, 1) 0%, hsla(327.72727272727275, 100%, 74.11764705882354%, 0) 100%), radial-gradient(at 44.64928420607963% 21.885830196533718%, hsla(85.51724137931033, 59.999999999999986%, 71.56862745098039%, 1) 0%, hsla(85.51724137931033, 59.999999999999986%, 71.56862745098039%, 0) 100%), radial-gradient(at 32.965620237867% 0.7576338797895099%, hsla(85.23809523809524, 96.92307692307693%, 74.50980392156863%, 1) 0%, hsla(85.23809523809524, 96.92307692307693%, 74.50980392156863%, 0) 100%), radial-gradient(at 11.466588731713024% 24.632370460434583%, hsla(229.52380952380952, 96.92307692307693%, 74.50980392156863%, 1) 0%, hsla(229.52380952380952, 96.92307692307693%, 74.50980392156863%, 0) 100%), radial-gradient(at 9.103602719523462% 98.66060125953071%, hsla(327.72727272727275, 100%, 74.11764705882354%, 1) 0%, hsla(327.72727272727275, 100%, 74.11764705882354%, 0) 100%), radial-gradient(at 70.83279064442421% 11.847665469348323%, hsla(85.51724137931033, 59.999999999999986%, 71.56862745098039%, 1) 0%, hsla(85.51724137931033, 59.999999999999986%, 71.56862745098039%, 0) 100%), radial-gradient(at 18.626651082170078% 78.2658780688371%, hsla(85.23809523809524, 96.92307692307693%, 74.50980392156863%, 1) 0%, hsla(85.23809523809524, 96.92307692307693%, 74.50980392156863%, 0) 100%), radial-gradient(at 79.07040553394434% 4.150834396848091%, hsla(229.52380952380952, 96.92307692307693%, 74.50980392156863%, 1) 0%, hsla(229.52380952380952, 96.92307692307693%, 74.50980392156863%, 0) 100%), radial-gradient(at 44.85302225037986% 8.89937059735766%, hsla(327.72727272727275, 100%, 74.11764705882354%, 1) 0%, hsla(327.72727272727275, 100%, 74.11764705882354%, 0) 100%);
+    background-repeat: no-repeat;
+    background-size: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
+
 .container{
-    width: 400px;
-    height: 500px;
-    border-radius: 1rem;
-    background-color: rgba(3, 34, 92, 0.329);
-    position:relative;
-    left: 500px;
-    top: 50px;
-}
-.title{
-    text-align: center;
-    color: white;
-    position: relative;
-    top: 40px;
-}
-.email{
+    display: flex;
+    justify-content: center;margin-top:;
     background-color: white;
-    border-radius: 6px;
-    width: 300px;
-    font-weight: bold;
-    padding: 1em;
-    margin-left: 30px;
+    height: 50vh;
+    width: 40vh;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 1px  rgb(143, 143, 143);
+}
+#profileImage{
+    height: 15vh;
+    align-self: center;
+
+}
+#inputLogin{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    row-gap:5px;
+    align-items: flex-start;
+    
+}
+.inputs{
+    width: 15vw;
+    border: black 1px solid;
+    border-radius: 5px;
+    padding: 10px;
+}
+.labels{
+    align-self: flex-start;
+}
+#inputText{
+    
+}
+#inputText::placeholder{
+
+}
+#inputPassword{
+ 
+}
+
+.rememberContainer{
+    display: flex;
+    align-items: center;
+}
+.minorParts{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+#remember{
+    font-size: 10px;
+}
+#inputButton{
+    width: 10vw;
+    align-self: center;
     position: relative;
-    top: 50px;
-    margin-bottom: 10px;
-    border: solid 1px black;
+    padding: 5px;
+}
+#inputButton:hover{
+    opacity: 70%;
+}
+#inputButton::after{
+    content: "  →";
+    position: absolute;
     color: black;
+    right: 20px;
+    transition: 0.3s all ease-in-out;
 }
-.senha{
-    background-color: white;
-    border-radius: 6px;
-    width: 300px;
-    color: black;
-    font-weight: bold;
-    padding: 1em;
-    margin-left: 30px;
-    position: relative;
-    top: 50px;
-    border: solid 1px black;
+#inputButton:hover::after{
+    right: 15px;
 }
-.botao{
-    background-color: rgb(0, 0, 0);
-    border-radius: 6px;
-    width: 250px;
-    color: rgb(255, 255, 255);
-    font-weight: bold;
-    padding: 1em;
-    margin-left: 30px;
-    position: relative;
-    top: 70px;
-    left: 40px;
-    border: solid 1px black;
+.forgetPassword{
+    font-size: 10px;
+    align-self: end;
 }
-.botao:hover{
-    background-color: rgba(0, 0, 0, 0.637);
+.forgetPassword:hover{
+text-decoration: underline;
 }
-.forget{
-    text-align: center;
-    position: relative;
-    top: 80px;
-    color: white;
-}
-.forget:hover{
-    text-decoration: underline;
-}
-@media screen and (max-width: 500px){
-    .container{
-        left: 0px;
-    }
-}   
