@@ -94,9 +94,13 @@ body{
 .forgetPassword:hover{
 text-decoration: underline;
 }
-@media screen and (max-width: 1085px){
+@media screen and (max-width: 1440px){
 .container{
     width: 400px;
+}
+body{
+    height: 100svh;
+    width: 100svw;
 }
 
 }
