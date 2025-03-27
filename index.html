@@ -4,19 +4,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="login.css">
     <title>Document</title>
 </head>
 
 <body>
     <div class="container">
         <div class="inputLogin">
+            <div class="circleImg">
             <img src="user.png" alt="" id="profileImage">
-           
-                <label for="inputText" class="labels">Nome</label>
-            <input type="text" placeholder="Seu nome aqui" id="inputText">
+        </div>
+            <label for="inputText" class="labels">Email</label>
+            <input type="text" placeholder="Seu Email aqui" id="inputText">
             <label for="inputPassword" class="labels">Senha</label>
             <input type="password" name="" id="inputPassword" placeholder="Insira sua senha">
+            
+            <label for="genderChoice" class="labels">Sexo</label>
+            <div class="genderChoice">
+                <div class="c1">
+                <input type="radio" name="genero" value="masculino" id="masculino">
+                <label for="masculino" class="labels">Masculino </label>
+            </div>
+            <div class="c2">
+                <input type="radio" name="genero" value="feminino" id="feminino">
+                <label for="feminino" class="labels">Feminino</label>
+            </div>
+            </div>
             <div class="minorParts">
                 <div class="rememberContainer">
                     <input type="checkbox" name="" id="inputCheck">
@@ -24,9 +37,10 @@
                 </div>
                 <p class="forgetPassword">Esqueci a senha</p>
             </div>
-            <button id="inputButton">Entrar</button>
+            <button id="inputButton">Cadastrar</button>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 
 </html>

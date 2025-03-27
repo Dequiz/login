@@ -1,0 +1,155 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins";
+    box-sizing: border-box;
+}
+body{
+    background-image: radial-gradient(at 21.78416955258513% 53.986211221150086%, hsla(229.52380952380952, 96.92307692307693%, 74.50980392156863%, 1) 0%, hsla(229.52380952380952, 96.92307692307693%, 74.50980392156863%, 0) 100%), radial-gradient(at 92.31816784000809% 75.6281491773517%, hsla(327.72727272727275, 100%, 74.11764705882354%, 1) 0%, hsla(327.72727272727275, 100%, 74.11764705882354%, 0) 100%), radial-gradient(at 44.64928420607963% 21.885830196533718%, hsla(85.51724137931033, 59.999999999999986%, 71.56862745098039%, 1) 0%, hsla(85.51724137931033, 59.999999999999986%, 71.56862745098039%, 0) 100%), radial-gradient(at 32.965620237867% 0.7576338797895099%, hsla(85.23809523809524, 96.92307692307693%, 74.50980392156863%, 1) 0%, hsla(85.23809523809524, 96.92307692307693%, 74.50980392156863%, 0) 100%), radial-gradient(at 11.466588731713024% 24.632370460434583%, hsla(229.52380952380952, 96.92307692307693%, 74.50980392156863%, 1) 0%, hsla(229.52380952380952, 96.92307692307693%, 74.50980392156863%, 0) 100%), radial-gradient(at 9.103602719523462% 98.66060125953071%, hsla(327.72727272727275, 100%, 74.11764705882354%, 1) 0%, hsla(327.72727272727275, 100%, 74.11764705882354%, 0) 100%), radial-gradient(at 70.83279064442421% 11.847665469348323%, hsla(85.51724137931033, 59.999999999999986%, 71.56862745098039%, 1) 0%, hsla(85.51724137931033, 59.999999999999986%, 71.56862745098039%, 0) 100%), radial-gradient(at 18.626651082170078% 78.2658780688371%, hsla(85.23809523809524, 96.92307692307693%, 74.50980392156863%, 1) 0%, hsla(85.23809523809524, 96.92307692307693%, 74.50980392156863%, 0) 100%), radial-gradient(at 79.07040553394434% 4.150834396848091%, hsla(229.52380952380952, 96.92307692307693%, 74.50980392156863%, 1) 0%, hsla(229.52380952380952, 96.92307692307693%, 74.50980392156863%, 0) 100%), radial-gradient(at 44.85302225037986% 8.89937059735766%, hsla(327.72727272727275, 100%, 74.11764705882354%, 1) 0%, hsla(327.72727272727275, 100%, 74.11764705882354%, 0) 100%);
+    background-repeat: no-repeat;
+    background-size: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    height: 60%;
+    width: 25%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 1px  rgb(143, 143, 143);
+    max-width: 400px;
+    min-width: 300px;
+    max-height: 600px;
+    min-height: 396px;
+}
+#profileImage{
+    height: 100px;
+    width: 100px;
+    align-self: center;
+    transition: all 1s ease;
+}
+.inputLogin{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    row-gap:1%;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+}
+#inputPassword{
+    width: 100%;
+    border: black solid 1px;
+    border-radius: 5px;
+    padding: 10px;
+}
+#inputText{
+    width: 100%;
+    border: black solid 1px;
+    border-radius: 5px;
+    padding: 10px;
+}
+#inputCheck{
+    border-radius: 10px;
+    margin-right: 1px;
+}
+.genderChoice{
+    width: 100%;
+    border: solid black 1px;
+    padding: 5px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    row-gap: 10px;
+    justify-content: space-between;
+    min-width: 200px;
+}
+.labels{
+    align-self: flex-start;
+    font-size: 15px;
+}
+.rememberContainer{
+    display: flex;
+    align-items: center;
+}
+.minorParts{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+#remember{
+    font-size: 10px;
+}
+.c1{
+    display: flex;
+}
+#inputButton {
+    align-self: center;
+    width: 50%;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    background: none;
+    position: relative;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    transition: background 1s ease, transform 0.3s ease;
+}
+
+#inputButton:hover {
+    background-image: radial-gradient(at 21.78416955258513% 53.986211221150086%, hsla(229.52380952380952, 96.92307692307693%, 74.50980392156863%, 1) 0%, hsla(229.52380952380952, 96.92307692307693%, 74.50980392156863%, 0) 100%), 
+                      radial-gradient(at 92.31816784000809% 75.6281491773517%, hsla(327.72727272727275, 100%, 74.11764705882354%, 1) 0%, hsla(327.72727272727275, 100%, 74.11764705882354%, 0) 100%), 
+                      radial-gradient(at 44.64928420607963% 21.885830196533718%, hsla(85.51724137931033, 59.999999999999986%, 71.56862745098039%, 1) 0%, hsla(85.51724137931033, 59.999999999999986%, 71.56862745098039%, 0) 100%), 
+                      radial-gradient(at 32.965620237867% 0.7576338797895099%, hsla(85.23809523809524, 96.92307692307693%, 74.50980392156863%, 1) 0%, hsla(85.23809523809524, 96.92307692307693%, 74.50980392156863%, 0) 100%);
+    background-size: 150% 150%;
+    background-position: center;
+    color: white;
+    transform: scale(1.05);
+}
+
+
+.forgetPassword{
+    font-size: 10px;
+    align-self: end;
+}
+.forgetPassword:hover{
+text-decoration: underline;
+}
+@media (max-width: 1440px) {
+    .minorParts {
+        flex-direction: column;
+        row-gap: 10px;
+    }
+    .genderChoice{
+        flex-direction: column;
+    }
+    .forgetPassword{
+        align-self: center;
+    }
+    .labels{
+        align-self: center;
+    }
+}
+@media (max-width:768px){
+    .container{
+      width: 100%;
+    }
+}
+@media (max-width: 600px) {
+    .container {
+        width: 600px;
+    }
+}
