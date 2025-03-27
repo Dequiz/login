@@ -96,11 +96,45 @@ text-decoration: underline;
 }
 @media screen and (max-width: 1440px){
 .container{
-    width: 400px;
+    width: 50svw
 }
 body{
     height: 100svh;
     width: 100svw;
 }
-
+.minorParts{
+    flex-direction: column;
+    row-gap: 10px;
 }
+.forgetPassword{
+    align-self: center;
+}
+.labels{
+    align-self: center;
+}
+#profileImage{
+    height: 30%;
+}
+}
+@media screen and (max-width: 1100px){
+    .container{
+        width: 350px;
+    }
+    body{
+        height: 100svh;
+        width: 100svw;
+    }
+    .minorParts{
+        flex-direction: column;
+        row-gap: 10px;
+    }
+    .forgetPassword{
+        align-self: center;
+    }
+    .labels{
+        align-self: center;
+    }
+    #profileImage{
+        height: 25%;
+    }
+    }
